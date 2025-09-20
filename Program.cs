@@ -1,0 +1,9 @@
+﻿namespace Shape_Drawer_lec_2;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello, World!");
+    }
+}
