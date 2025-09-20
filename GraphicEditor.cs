@@ -2,25 +2,22 @@ public class GraphicEditor
 {
 
     //Метод для отрисовки всех фигур из списка
-    public void DrawAllShapes(List<Shape> shapes)
+    public void DrawAllShapes(List<object> shapes)
     {
         foreach (var shape in shapes)
         {
-            //Проверяем тип создаваемой фигуры
-            //Тип в виде строки 
-            if (shape.Type == "rectangle")
+            if (shape is Rectangle rect)
             {
-                Console.WriteLine($"Рисую прямоугольник в {shape.X},{shape.Y} размером {shape.Width}x{shape.Height}");
+                rect.Draw();
             }
-            else if (shape.Type == "circle")
+            else if (shape is Circle circle)
             {
-                Console.WriteLine($"Рисую круг в {shape.X},{shape.Y} радиусом {shape.Radius}");
+                circle.Draw();
             }
-            else if (shape.Type == "Любой другой тип")
+            else
             {
-                Console.WriteLine($"Рисую еще что-то");
+                throw new Exception("Неизвестная фигура");
             }
-
         }
     }
 }
