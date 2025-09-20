@@ -1,9 +1,13 @@
 public class GraphicEditor
 {
+
+    //Метод для отрисовки всех фигур из списка
     public void DrawAllShapes(List<Shape> shapes)
     {
         foreach (var shape in shapes)
         {
+            //Проверяем тип создаваемой фигуры
+            //Тип в виде строки 
             if (shape.Type == "rectangle")
             {
                 Console.WriteLine($"Рисую прямоугольник в {shape.X},{shape.Y} размером {shape.Width}x{shape.Height}");
