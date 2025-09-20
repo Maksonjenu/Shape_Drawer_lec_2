@@ -11,7 +11,7 @@ public class Circle
 
     public void Draw()
     {
-    
-}
+        Console.WriteLine($"Рисую круг в {_x},{_y} радиусом {_radius}");
+    }
 
 }
