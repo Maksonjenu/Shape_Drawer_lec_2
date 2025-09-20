@@ -6,7 +6,7 @@ class Program
     {
         GraphicEditor graphicEditor = new GraphicEditor();
 
-        List<Shape> shapes = new List<Shape>();
+        List<object> shapes = new List<object>();
 
         //Использование типов как строк требует 
         //большого внимания к написанию
