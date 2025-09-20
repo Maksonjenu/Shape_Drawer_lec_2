@@ -9,4 +9,9 @@ public class Rectangle
         _width = width;
         _height = height;
     }
+
+    public void Draw()
+    {
+        Console.WriteLine($"Рисую прямоугольник в {_x},{_y} размером {_width}x{_height}");
+    }
 }
