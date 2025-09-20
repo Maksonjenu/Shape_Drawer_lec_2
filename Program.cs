@@ -14,17 +14,10 @@ class Program
         //я написал типы с маленькой буквы :)
 
         //TODO: Изменить инициализацию переменных
-        Shape rectangle = new Shape()
-        {
-            Type = "rectangle", // Тут мы обращаемся к каждому свойству
-            X = 15,             // и задаем им значения
-            Y = 20,
-            Height = 50,
-            Width = 33
-        };
-        Shape rectangle_bad = new Shape() { Type = "Rectangle" };
-        Shape circle = new Shape() { Type = "Circle" };
-        Shape circle_bad = new Shape() { Type = "Cricle" };
+        Rectangle rectangle = new Rectangle(15, 20, 33, 50);
+        Rectangle rectangle_bad = new Rectangle(0, 0, 0, 0);
+        Circle circle = new Circle(0, 0, 10);
+        Circle circle_bad = new Circle(0, 0, 0);
 
         shapes.Add(rectangle);
         shapes.Add(circle);
