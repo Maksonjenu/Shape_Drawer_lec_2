@@ -9,5 +9,9 @@ public class Circle
         _radius = radius;
     }
 
+    public void Draw()
+    {
     
+}
+
 }
