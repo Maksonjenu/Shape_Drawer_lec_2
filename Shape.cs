@@ -13,4 +13,6 @@ public class Shape
     public int Radius { get; set; }
     public int Height { get; set; }
     public int Width { get; set; }
+
+    #endregion
 }
