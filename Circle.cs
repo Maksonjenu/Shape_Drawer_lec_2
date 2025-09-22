@@ -1,6 +1,6 @@
-public class Circle
+public class Circle : Shape
 {
-    private int _x, _y, _radius;
+    private int _radius;
 
     public Circle(int x, int y, int radius)
     {
