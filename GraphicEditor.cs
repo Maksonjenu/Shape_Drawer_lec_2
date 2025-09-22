@@ -1,6 +1,7 @@
 public class GraphicEditor
 {
 
+    // Метод DrawAllShapes теперь принимает список фигур типа Shape
     public void DrawAllShapes(List<Shape> shapes)
     {
         foreach (var shape in shapes)
