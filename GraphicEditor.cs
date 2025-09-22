@@ -6,20 +6,16 @@ public class GraphicEditor
     {
         foreach (var shape in shapes)
         {
+            // Вызываем метод Draw для каждой фигуры.
+            // Какой именно метод Draw будет вызван
+            // (из Circle или из Rectangle) - зависит от типа объекта,
+            // на который указывает переменная shape.
 
-            if (shape is Rectangle rect)
-            {
-                rect.Draw();
-            }
+            //Благодаря тому, что метод Draw объявлен как абстрактный
+            //в базовом классе Shape, компилятор "знает", что у каждого
+            //класса-наследника (Circle, Rectangle) есть своя реализация метода Draw.
 
-            else if (shape is Circle circle)
-            {
-                circle.Draw();
-            }
-            else
-            {
-                throw new Exception("Неизвестная фигура");
-            }
+            shape.Draw();
         }
     }
 }
