@@ -6,24 +6,18 @@ class Program
     {
         GraphicEditor graphicEditor = new GraphicEditor();
 
-        List<Shape> shapes = new List<Shape>();
+        List<object> shapes = new List<object>();
 
-        //Использование типов как строк требует 
-        //большого внимания к написанию
-        //я сам пока делал пример забыл, что в методе-рисовальщике 
-        //я написал типы с маленькой буквы :)
+        // Теперь наш список фигур имеет базовый тип 
+        // object. В данный список можно добавлять объекты
+        // других типов, это небезопасно.
 
-        Shape rectangle = new Shape()
-        {
-            Type = "rectangle", // Тут мы обращаемся к каждому свойству
-            X = 15,             // и задаем им значения
-            Y = 20,             
-            Height = 50,
-            Width = 33
-        };
-        Shape rectangle_bad = new Shape() { Type = "Rectangle" };
-        Shape circle = new Shape() { Type = "Circle" };
-        Shape circle_bad = new Shape() { Type = "Cricle" };
+        // Также мы создаем наши переменные как объекты
+        // созданных нами классов
+        Rectangle rectangle = new Rectangle(15, 20, 33, 50);
+        Rectangle rectangle_bad = new Rectangle(0, 0, 0, 0);
+        Circle circle = new Circle(0, 0, 10);
+        Circle circle_bad = new Circle(0, 0, 0);
 
         shapes.Add(rectangle);
         shapes.Add(circle);
