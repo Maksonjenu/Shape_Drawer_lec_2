@@ -1,4 +1,8 @@
-// Наследуемся от класса Shape
+// Наследуемся от класса Shape.
+// Класс Circle должен реализовать
+// все абстрактные методы базового класса Shape.
+
+// В данном случае это метод Draw.
 public class Circle : Shape
 {
     // Поля, специфичные для круга
@@ -13,7 +17,13 @@ public class Circle : Shape
         _radius = radius;
     }
 
-    public void Draw()
+    // Реализация абстрактного метода Draw.
+    // Используется слово override,
+    // т.к. мы переопределяем метод базового класса.
+
+    // Класс Circle теперь реализует
+    // свой вариант метода Draw.
+    public override void Draw()
     {
         Console.WriteLine($"Рисую круг в {_x},{_y} радиусом {_radius}");
     }
