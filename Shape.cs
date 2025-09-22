@@ -1,18 +1,12 @@
 public class Shape
 {
 
-    //На текущем этапе класс фигуры не используется
-    //Далее мы будем использовать его в качестве родительского
+    // Здесь "нам" - текущий класс
+    // protected - видно нам и нашим наследникам (Circle и Rectangle).
+    // private - видно только нам (Shape).
+    // public - видно всем (всем остальным классам).
 
-
-    #region Общие поля
-    public string Type { get; set; }
-    public int X { get; set; }
-    public int Y { get; set; }
-
-    public int Radius { get; set; }
-    public int Height { get; set; }
-    public int Width { get; set; }
-
-    #endregion
+    // Поля _x и _y теперь принадлежат базовому классу Shape.
+    // Любая фигура должна иметь координаты.
+    protected int _x, _y;
 }

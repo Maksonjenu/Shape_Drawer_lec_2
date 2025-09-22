@@ -1,9 +1,16 @@
-public class Rectangle
+
+// Наследуемся от класса Shape
+public class Rectangle : Shape
 {
-    private int _x, _y, _width, _height;
+
+    // Поля, специфичные для прямоугольника
+    private int _width, _height;
 
     public Rectangle(int x, int y, int width, int height)
     {
+
+        // Поля _x и _y теперь принадлежат базовому классу Shape,
+        // поэтому мы можем к ним обращаться напрямую
         _x = x;
         _y = y;
         _width = width;

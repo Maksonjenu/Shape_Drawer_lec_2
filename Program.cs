@@ -6,14 +6,13 @@ class Program
     {
         GraphicEditor graphicEditor = new GraphicEditor();
 
-        List<object> shapes = new List<object>();
+        // Возвращаем тип данных Shape в словарь
+        // Теперь мы можем создавать список фигур
+        // и добавлять туда только объекты классов-наследников
 
-        // Теперь наш список фигур имеет базовый тип 
-        // object. В данный список можно добавлять объекты
-        // других типов, это небезопасно.
+        List<Shape> shapes = new List<Shape>();
 
-        // Также мы создаем наши переменные как объекты
-        // созданных нами классов
+        //Объявление конкретных фигур осталось без изменений
         Rectangle rectangle = new Rectangle(15, 20, 33, 50);
         Rectangle rectangle_bad = new Rectangle(0, 0, 0, 0);
         Circle circle = new Circle(0, 0, 10);

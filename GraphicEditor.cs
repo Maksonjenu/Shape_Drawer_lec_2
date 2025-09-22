@@ -1,24 +1,16 @@
 public class GraphicEditor
 {
 
-    //Метод для отрисовки всех фигур из списка
-    // Сигнатура метода изменилась, теперь аргументом
-    // является список "объектов"
-    public void DrawAllShapes(List<object> shapes)
+    // Метод DrawAllShapes теперь принимает список фигур типа Shape
+    public void DrawAllShapes(List<Shape> shapes)
     {
         foreach (var shape in shapes)
         {
-            // С помощью оператора is мы проверяем
-            // допустимость преобразования shape
-            // в нужный нам тип, и если это возможно
-            // преобразование сохраняется в rect
+
             if (shape is Rectangle rect)
             {
                 rect.Draw();
             }
-
-            // Аналогично коду выше, только
-            // с классом окружности
 
             else if (shape is Circle circle)
             {
