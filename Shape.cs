@@ -22,4 +22,7 @@ public abstract class Shape
     // Т.е. каждый класс-наследник должен иметь
     // СВОЮ реализацию метода Draw.
     public abstract void Draw();
+
+
+
 }
